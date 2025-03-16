@@ -144,8 +144,8 @@ class FinDataFetcher:
         for idx, (city, info) in enumerate(current_timezones.items()):
             with cols[idx % 3]:
                 st.markdown(f"### {city}")
-                st.markdown(f"🕓 Time: <span style='color:red;'>{info['time']}</span>", unsafe_allow_html=True)
-                st.markdown(f"📅 Date: <span style='color:red;'>{info['date']}</span>", unsafe_allow_html=True)
+                st.markdown(f"🕓 Time: <span style='color:green;'>{info['time']}</span>", unsafe_allow_html=True)
+                st.markdown(f"📅 Date: <span style='color:green;'>{info['date']}</span>", unsafe_allow_html=True)
                 st.markdown("---")
 
         spacer_cols = st.columns([2, 1, 1, 2])
@@ -159,7 +159,7 @@ class FinDataFetcher:
 
     def show_shares_dashboard(self):
         st.markdown("<h2 style='text-align: center;'>📈 Shares & Funds Dashboard</h2>", unsafe_allow_html=True)
-        fund = st.selectbox(label='Choose', options=list(self.all_etf_funds_dict.keys()))
+        fund = st.selectbox(label='Choose:', options=list(self.all_etf_funds_dict.keys()))
         #api = self.get_api_keys()
         #data = self.get_market_data_alpha_advantage(api_key=api)
         data = self.fetch_fund_data_yf(fund_name=fund)
