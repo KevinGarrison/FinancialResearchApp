@@ -1,0 +1,14 @@
+[project]
+name = "financialresearchapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "plotly>=6.0.0",
+    "pycoingecko>=3.2.0",
+    "ruff>=0.9.10",
+    "streamlit>=1.43.2",
+    "uuid>=1.30",
+    "yfinance>=0.2.54",
+]
