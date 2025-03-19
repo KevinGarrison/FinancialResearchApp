@@ -18,3 +18,7 @@ elif st.session_state.page == "shares":
     tool.show_shares_dashboard()
 elif st.session_state.page == "crypto":
     tool.show_crypto_dashboard()
+elif st.session_state.page == "details":
+    tool.show_company_details_dashboard()
+elif st.session_state.page == "filings":
+    tool.show_company_filings_dashboard()

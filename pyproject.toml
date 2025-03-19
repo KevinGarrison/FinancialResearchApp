@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "bs4>=0.0.2",
     "plotly>=6.0.0",
     "pycoingecko>=3.2.0",
     "ruff>=0.9.10",
